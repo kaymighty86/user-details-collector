@@ -1,0 +1,57 @@
+.mainBackground{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100svh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.windowWrapper{/*this window wrapper is needed in order to make the animation of the window play correctly because we're also manipulating transform here for proper positioning of the window*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 25rem;
+}
+
+.errorWindow{
+    width: 100%;
+    max-width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    animation: windowDisplayAnim 0.2s linear;
+}
+
+@keyframes windowDisplayAnim{
+    0%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.errorWindow>header{
+    padding: 0.8rem;
+    background-color: rgb(93, 30, 93);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.errorWindow>p{
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: small;
+}
+
+
+.windowCloseButton{
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+}

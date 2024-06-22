@@ -1,0 +1,40 @@
+p{
+    margin: 0PX;
+}
+
+.userDetailsContainer{
+    position: relative;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1.2rem;
+    border-radius: 1rem;
+    background-color: wheat;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.userDetailsContainer:hover::after{
+    content: "Click to Delete";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: rgb(215, 89, 89);
+    font-size: x-small;
+    color: white;
+    text-align: center;
+}
+
+.userDetailsContainer:active{
+    transform: scale(0.9,0.9);
+}
+
+.userDetailsContainer>:first-child{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.userDetailsContainer>:nth-child(2){
+    font-size: 0.7em;
+}

@@ -1,0 +1,18 @@
+.customButton{
+    display: block;
+    margin-top: 1rem;
+    background-color: rgb(242, 25, 119);
+    border: none;
+    border-bottom: 0.2rem solid rgb(161, 9, 75);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-family: 'Playpen Sans', cursive;
+    color: white;
+}
+
+.customButton:active{
+    background-color: rgb(213, 19, 103);
+    border: none;
+    margin-top: 1.2rem;/*margin is increased at the top because we are removing the bottom-border. the Margin keeps the button positioned down*/
+}

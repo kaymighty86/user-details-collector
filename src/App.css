@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;700&display=swap');
+
+body{
+  background-color: rgb(48, 38, 48);
+  font-family: 'Playpen Sans', cursive;
+}
+
+.App>.headerSection{
+  color: white;
+  text-align: center;
+}
+
+.App>.headerSection>img{
+  width: 6rem;
+  height: auto;
+}
+
+.App>.headerSection>h2{
+  margin: 0px;
+}
